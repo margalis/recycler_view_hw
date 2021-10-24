@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleview"
+        android:layout_width="354dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:padding="@dimen/cardview_default_radius"
+        android:text="New Driver Information"
+        android:textAlignment="gravity"
+        android:textSize="35dp"
+        android:background="@color/teal_200"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="329dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/teal_700"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleview" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:background="#7EE4DB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+
+    <TextView
+        android:id="@+id/phoneNumberTextView"
+        android:layout_width="225dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/teal_700"
+        android:text="Phone Number"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+    <EditText
+        android:id="@+id/PhoneNumberEditText"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:background="#7EE4DB"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberTextView" />
+
+    <TextView
+        android:id="@+id/carNumberTextView"
+        android:layout_width="131dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        android:text="Car Number"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumberEditText" />
+
+    <EditText
+        android:id="@+id/carNumberEditText"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:background="#7EE4DB"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carNumberTextView" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="56dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carNumberEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
